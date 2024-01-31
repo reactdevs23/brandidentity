@@ -1,0 +1,132 @@
+.mainWrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 60px 25px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  max-width: 250px;
+}
+
+.items-1 {
+  width: 100%;
+}
+.items-2 {
+  width: calc(50% - 25px);
+}
+
+.items-3 {
+  width: calc(100% / 3 - 25px);
+}
+
+.items-4 {
+  width: calc(100% / 4 - 25px);
+}
+.iconWrapper {
+  --borderRadius: 12px;
+  width: 110px;
+  height: 110px;
+  border: 2px dashed var(--primaryColor);
+  border-radius: var(--borderRadius);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+.iconContainer {
+  width: 80%;
+  height: 80%;
+  background: var(--secondaryColor);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+
+  box-shadow: 3px -3px 5px rgba(0, 0, 0, 0.15);
+  border-radius: var(--borderRadius);
+}
+.iconWrapper::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  transform: translate(3px, -3px);
+  width: 50%;
+  height: 50%;
+  border-top: 5px solid var(--bg);
+  border-right: 5px solid var(--bg);
+  border-radius: 8px;
+  border-radius: var(--borderRadius);
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.iconWrapper::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  transform: translateY(-100%);
+  width: 5px;
+  height: 50%;
+
+  border-radius: 8px;
+  background: var(--bg);
+}
+.cirlce {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg);
+  top: -100%;
+  font-size: 20px;
+}
+.smallCirlce {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg);
+  top: -50%;
+}
+.icon {
+  max-width: 80px;
+}
+.title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--primaryColor);
+  max-width: 160px;
+}
+.info {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+  color: var(--primaryColor);
+}
