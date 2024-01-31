@@ -34,6 +34,12 @@ function App() {
         info: `There are many companies in today's market that have "maskots" who act as icons for there overall brand image`,
         bg: "#FF9772",
       },
+      {
+        icon: icon3,
+        title: "Provide seamless service",
+        info: `There are many companies in today's market that have "maskots" who act as icons for there overall brand image`,
+        bg: "#8A6AD8",
+      },
     ],
   };
   return (

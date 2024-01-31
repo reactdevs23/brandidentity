@@ -14,7 +14,7 @@ const MainComponent = ({ subHeading, heading, data }) => {
               style={{ "--bg": el.bg }}
               key={i}
               className={`${styles.card} ${styles[`items-${data.length}`]}  ${
-                data.length > 4 && styles[`items-4`]
+                data.length > 5 && styles[`items-5`]
               }`}
             >
               <div className={styles.iconWrapper}>
